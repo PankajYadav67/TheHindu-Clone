@@ -9,9 +9,6 @@
 
     <!-- faivcon -->
     <link rel="icon" href="/public/favicon.jpg" type="image/x-icon" />
-
-
-
   </head>
 
   <body>
@@ -30,18 +27,58 @@
         </div>
       </div>
 
-      <div class="desktop header-menu">
+      <div class="desktop header-menu" style="margin-top: 10px">
         <div class="navmenu-container main-menu">
-          <nav class="navbar" id="nav_top">
+          <nav
+            class="navbar"
+            id="nav_top"
+            style="display: flex; justify-content: space-around"
+          >
             <div>
-              <ul class="navbar-nav" style="display: flex;">
-                <li class="nav-item"><a class="nav-link">India</a></li>
-                <li class="nav-item"><a class="nav-link">World</a></li>
-                <li class="nav-item"><a class="nav-link">Opinion</a></li>
-                <li class="nav-item"><a class="nav-link">Sports</a></li>
-                <li class="nav-item"><a class="nav-link">e-Paper </a></li>
-                <li class="nav-item"><a class="nav-link">India </a></li>
+              <ul class="navbar-nav" style="display: flex">
+                <li class="nav-item">
+                  <a class="nav-link" data-search="India">India</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-search="World">World</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-search="Healthcare">Healthcare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-search="Sports">Sports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-search="UK">UK</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-search="Crypto">Crypto</a>
+                </li>
               </ul>
+            </div>
+            <div class="search-container">
+              <input type="text" id="searchInput" placeholder="Search..." />
+              <button id="searchButton" onclick="handleSearch()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#fff"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 10a7 7 0 1 0-14 0 7 7 0 0 0 14 0z"
+                  />
+                </svg>
+              </button>
             </div>
           </nav>
         </div>
@@ -50,24 +87,25 @@
       <hr class="nav-hr" />
     </header>
 
-    <script type="module" src="main.js"></script>
-
-    <div class="herosection" style="display: flex">
-      <div class="card-container" id="container1">
+    <div
+      class="herosection"
+      style="
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 80px;
+        margin-right: 80px;
+      "
+    >
+      <div class="card-container">
         <!-- News content will be dynamically added here -->
       </div>
-      <div class="card-container" id="container2">
-        <!-- News content will be dynamically added here -->
-      </div>
-      <div class="card-container" id="container3">
-        <!-- News content will be dynamically added here -->
-      </div>
+      <div class="card-container"></div>
+      <div class="card-container"></div>
     </div>
 
- 
     <footer>
       <div class="container">
-        <div class="row footer-logo">
+        <div class="row footer-logo" style="display: flex; justify-content: space-between;">
           <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 col-12">
             <a href="https://www.thehindu.com/"
               ><img
@@ -78,7 +116,7 @@
             /></a>
           </div>
           <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 col-12">
-            <div class="app-icon">
+            <div class="app-icon" style="display: flex">
               <a
                 href="https://play.google.com/store/apps/details?id=com.mobstac.thehindu"
                 title="Google Play"
@@ -773,7 +811,7 @@
                 <a
                   href="https://www.thehindu.com/society/green-humour-by-rohan-chakravarty-on-lakshadweep-tourism-and-maldives-boycott-row/article67726368.ece"
                   title="Updated: January 11, 2024 12:15 IST
-      Published: January 11, 2024 12:15 IST"
+  Published: January 11, 2024 12:15 IST"
                 >
                   Green Humour by Rohan Chakravarty on Lakshadweep tourism and
                   Maldives boycott row
@@ -790,7 +828,7 @@
                 <a
                   href="https://www.thehindu.com/news/international/maldives-china-sign-20-agreements-after-muizzu-xi-meeting-amid-diplomatic-row-with-india/article67728474.ece"
                   title="Updated: January 11, 2024 18:19 IST
-      Published: January 11, 2024 02:05 IST"
+  Published: January 11, 2024 02:05 IST"
                 >
                   Maldives, China sign 20 agreements after Muizzu-Xi meeting
                   amid diplomatic row with India
@@ -807,7 +845,7 @@
                 <a
                   href="https://www.thehindu.com/news/international/us-britain-launch-massive-retaliatory-strike-against-iran-backed-houthis-in-yemen/article67733085.ece"
                   title="Updated: January 12, 2024 08:38 IST
-      Published: January 12, 2024 05:50 IST"
+  Published: January 12, 2024 05:50 IST"
                 >
                   U.S., Britain launch massive retaliatory strike against
                   Iran-backed Houthis in Yemen
@@ -824,7 +862,7 @@
                 <a
                   href="https://www.thehindu.com/entertainment/movies/netflix-removes-nayanthara-starrer-annapoorani-after-right-wing-outrage/article67729841.ece"
                   title="Updated: January 12, 2024 13:52 IST
-      Published: January 11, 2024 14:20 IST"
+  Published: January 11, 2024 14:20 IST"
                 >
                   Netflix removes
                   Nayanthara-starrer&nbsp;‘Annapoorani’&nbsp;after right-wing
@@ -842,7 +880,7 @@
                 <a
                   href="https://www.thehindu.com/entertainment/movies/merry-christmas-movie-review-sriram-raghavan-delivers-a-sumptuous-slice-of-crime-thanks-to-a-fabulous-vijay-sethupathi/article67733569.ece"
                   title="Updated: January 12, 2024 16:13 IST
-      Published: January 12, 2024 13:09 IST"
+  Published: January 12, 2024 13:09 IST"
                 >
                   ‘Merry Christmas’ movie review: Sriram Raghavan delivers a
                   sumptuous slice of crime thanks to a fabulous Vijay Sethupathi
@@ -862,7 +900,7 @@
                 <a
                   href="https://www.thehindubusinessline.com/info-tech/tcs-reports-4-growth-in-q3-consolidated-revenue-led-by-strong-uk-performance/article67730578.ece"
                   title="Updated: January 11, 2024 22:05 IST
-      Published: January 11, 2024 18:36 IST"
+  Published: January 11, 2024 18:36 IST"
                 >
                   TCS posts a tepid 2% rise in profits with the North American
                   market slow to recover
@@ -879,7 +917,7 @@
                 <a
                   href="https://www.thehindubusinessline.com/companies/unfazed-by-controversy-mutha-group-to-go-ahead-with-maldives-resort-project/article67722444.ece"
                   title="Updated: January 9, 2024 13:58 IST
-      Published: January 9, 2024 13:58 IST"
+  Published: January 9, 2024 13:58 IST"
                 >
                   Unfazed by controversy, Mutha group to go ahead with Maldives
                   resort project
@@ -896,8 +934,8 @@
                 <a
                   href="https://frontline.thehindu.com/world-affairs/yoga-maldives-china-belt-road-initiative-india-mohamed-muizzu-ibu-solih/article67457703.ece"
                   title="Updated: November 10, 2023 13:15 IST
-      Published: November 2, 2023 11:00 IST" 
-      style="text-decoration: none;"
+  Published: November 2, 2023 11:00 IST"
+                  style="text-decoration: none"
                 >
                   How BJP’s yoga misadventure in Maldives paved the way for
                   China to assert its dominance
@@ -914,7 +952,7 @@
                 <a
                   href="https://frontline.thehindu.com/environment/the-forest-conservation-amendment-act-2023-dramatically-alters-forest-governance-in-india/article67726166.ece"
                   title="Updated: January 11, 2024 12:15 IST
-      Published: January 10, 2024 14:08 IST"
+  Published: January 10, 2024 14:08 IST"
                 >
                   Greenlight for destruction: Controversial forest Act opens
                   door to unfettered deforestation
@@ -931,7 +969,7 @@
                 <a
                   href="https://sportstar.thehindu.com/cricket/ind-vs-afg-head-to-head-t20i-record-stats-india-afghanistan-highest-scores-best-performances/article67728311.ece"
                   title="Updated: January 11, 2024 07:13 IST
-      Published: January 11, 2024 07:13 IST"
+  Published: January 11, 2024 07:13 IST"
                 >
                   IND vs AFG head-to-head record in T20Is: India vs Afghanistan
                   overall stats
@@ -1076,8 +1114,7 @@
               </li>
               <li id="teconsent"></li>
             </ul>
-            <div style="display:flex; justify-content: space-between;">
-
+            <div style="display: flex; justify-content: space-between">
               <div class="copyrights">
                 <a
                   >Copyright© 2024, THG PUBLISHING PVT LTD. or its affiliated
@@ -1094,17 +1131,13 @@
                   />
                 </p>
               </div>
-
             </div>
           </div>
         </div>
       </div>
       <div id="consent_blackbar"></div>
-
-
     </footer>
 
-
-  
+    <script type="module" src="main.js"></script>
   </body>
 </html>
