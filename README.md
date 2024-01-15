@@ -42,12 +42,13 @@ Run index.html file on browser
 ![App Screenshot](/public/Screenshot%20(184).png)
 
 **Hero Section:**
+![App Screenshot](/public/Screenshot%20(187).png)
+![App Screenshot](/public/Screenshot%20(188).png)
+
+**Footer:**
 ![App Screenshot](/public/Screenshot%20(185).png)
 ![App Screenshot](/public/Screenshot%20(186).png)
 
-**Footer:**
-![App Screenshot](/public/Screenshot%20(187).png)
-![App Screenshot](/public/Screenshot%20(188).png)
 
 
 ## Reference
