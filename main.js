@@ -4,7 +4,8 @@ const apiKey = "a8caeb81866f490fa6faaa4dbf6f0c5d";
 const apiUrl = (query) =>
   query
     ? `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`
-    : `https://newsapi.org/v2/top-headlines?q=thehindu&apiKey=${apiKey}`;
+    : `https://newsapi.org/v2/top-headlines?q=india&apiKey=${apiKey}`;
+
 
 async function getNews(query) {
   try {
@@ -71,9 +72,10 @@ async function updateContainers(query) {
   const containerClass = "card-container";
   const containers = document.querySelectorAll(`.${containerClass}`);
 
-  for (const container of containers) {
+  for (let i = 0; i < containers.length; i++) {
+    const container = containers[i];
     const articles = await getNews(query);
-    const limitedArticles = articles.slice(0, 3);
+    const limitedArticles = articles.slice(i * 5, (i + 1) * 5);
     updateCard(container, limitedArticles);
   }
 }
