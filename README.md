@@ -31,7 +31,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd amazon
+  cd thehindu
 ```
 Run index.html file on browser
 
