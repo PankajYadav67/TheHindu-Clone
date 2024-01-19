@@ -75,7 +75,7 @@ async function updateContainers(query) {
   for (let i = 0; i < containers.length; i++) {
     const container = containers[i];
     const articles = await getNews(query);
-    const limitedArticles = articles.slice(i * 5, (i + 1) * 5);
+    const limitedArticles = articles.slice(i * 12, (i + 1) * 12);
     updateCard(container, limitedArticles);
   }
 }
