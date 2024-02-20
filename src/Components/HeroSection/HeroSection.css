@@ -1,0 +1,16 @@
+.RedColor{
+  color: #b00020;
+}
+.s_article{
+  font-size: larger;
+
+}
+.s_Img{
+  width: 300px; 
+  height: 150px;
+}
+.s_author{
+  color: azure;
+  font-size: 12px;
+ text-decoration: underline;
+}
